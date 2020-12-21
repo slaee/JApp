@@ -1,0 +1,59 @@
+*{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+    -webkit-touch-callout: none;               
+    -webkit-text-size-adjust: none;             
+    -webkit-user-select: none;                  
+    background-color:#E4E4E4;
+    background-image:linear-gradient(to bottom, #A7A7A7 0%, #E4E4E4 51%);
+    font-family: system-ui, -apple-system, -apple-system-font, 'Segoe UI', 'Roboto', sans-serif;
+    font-size:12px;
+    height:100vh;
+    margin:0px;
+    padding:0px;
+    padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+    text-transform:uppercase;
+    width:100%;
+}
+
+body.loading{
+    position: relative;
+}
+
+body.loading::before{
+    content: "I will teach you";
+    background-color: white;
+    background-size: 180px;
+    background-color: #313131;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 999999;
+
+    text-align: center;
+    line-height: 150vh;
+    color: white;
+    letter-spacing: 2.4px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+body.loading::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    content: attr(data-small-msg);
+    margin: 15px auto;
+    z-index: 999999;
+    color: white;
+    font-size: 1rem;
+    width: 90vw;
+    text-align: center;
+    color: #bd988a;
+}
