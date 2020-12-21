@@ -39,8 +39,6 @@
       "cordova-plugin-tts": {},
       "cordova-plugin-speechrecognition": {}
     },
-    "platforms": [
-      "android"
-    ]
+    "platforms": []
   }
 }
