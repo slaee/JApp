@@ -14,9 +14,19 @@
         <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no, viewport-fit=cover">
 
-        <link rel="stylesheet" href="./css/index.css">
+        <!-- frameworks -->
+        <link rel="stylesheet" href="./lib/framework7/css/framework7.bundle.min.css">
         <link rel="stylesheet" href="./lib/animation/animate.min.css">
+
+        <!-- main app css -->
+        <link rel="stylesheet" href="./css/index.css">
+
         <script src="cordova.js"></script>
+
+        <!-- frameworks -->
+        <script src="./lib/framework7/js/framework7-lite.bundle.min.js"></script>
+
+        <!-- main app javascript -->
         <script defer src="./js/main.sly.js" async></script>
         <title>ImSly</title>
         <style>
@@ -54,7 +64,7 @@
                 left: 0;
                 left: 50%;
                 transform: translate(-50%, 0);
-                content: attr(data-small-msg);
+                content: attr(alert-message);
                 margin: 15px auto;
                 z-index: 999999;
                 font-size: 1rem;
@@ -65,6 +75,6 @@
         </style>
     </head>
     <body class="loading splash animate__animated animate__fadeOutLeft animate__delay-4s">
-        
+        <div id="root"" class="Home Page"></div>
     </body>
 </html>
