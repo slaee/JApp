@@ -41,8 +41,6 @@
       "cordova-plugin-speechrecognition": {},
       "com.napolitano.cordova.plugin.intent": {}
     },
-    "platforms": [
-      "android"
-    ]
+    "platforms": []
   }
 }
